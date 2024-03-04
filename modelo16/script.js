@@ -19,15 +19,17 @@ function contar() {
             let f =  Number(fim.value)
             let p = Number(passo.value)
 
+            //valida passo e adiciona passo se for 0
             if (p <= 0) {
                 alert('Passo inválido, considerar PASSO 1')
                 p=1
             }
-
+            //contagem crescente
             if(i < f){
                 for(let c = i; c <= f; c += p){
                     res.innerHTML += `${c} \u{1F449}`
                 }
+                //contagem regressiva
             }else{
                 for(let c = i; c >= f; c -= p ){
                     res.innerHTML += `${c} \u{1F449}`
