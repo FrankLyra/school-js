@@ -19,7 +19,7 @@ function contar() {
             let f =  Number(fim.value)
             let p = Number(passo.value)
 
-            //valida passo e adiciona passo se for 0
+            //valida passo e adiciona
             if (p <= 0) {
                 alert('Passo inválido, considerar PASSO 1')
                 p=1
